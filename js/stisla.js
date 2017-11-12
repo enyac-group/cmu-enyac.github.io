@@ -50,7 +50,7 @@ $(function() {
 
 	$("[data-toggle=read]").click(function() {
 		let $this = $(this),
-				$id = $this.attr("id");
+				$id = $this.attr("data-id");
 
 		$("body").css({
 			overflow: "hidden"
@@ -62,17 +62,6 @@ $(function() {
 				$element += '<a class="btn btn-outline-primary"><i class="ion ion-chevron-left"></i> Back</a>';
 				$element += '</div>';
 				$element += '<h1 class="article-title">{title}</h1>';
-				$element += '<div class="article-metas">';
-				$element += '<div class="meta">';
-				$element += '	{date}';
-				$element += '</div>';
-				$element += '<div class="meta">';
-				$element += '	{category}';
-				$element += '</div>';
-				$element += '<div class="meta">';
-				$element += '	{author}';
-				$element += '</div>';
-				$element += '</div>';
 				$element += '<figure class="article-picture"><img src="{picture}"></figure>';
 				$element += '<div class="article-content">';
 				$element += '{content}';
