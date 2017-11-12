@@ -1,5 +1,5 @@
 {
 	"title": "Computing for Sustainability",
-	"picture": "img/news/img01.jpg",
+	"picture": "img/news/img01.png",
 	"content": "<p>Water, solar and wind are essential for a sustainable transformation of our energy systems. Distributed solar and wind farms proliferate, but energy harvesting from water is trapped in a century-old damming paradigm with high up-front costs and ecological impacts. An environmentally friendly alternative, known as hydrokinetic or run-of-the-river power extraction, harvests a portion of the kinetic energy in the river at relatively small, local scales at multiple places along the river. However, these projects are characterized by uncertainty in generated output and strong weather/climate dependence. Our project on Climate-Aware Renewable Hydropower Generation and Disaster Avoidance Research addresses these challenges by developing climate-aware modeling, analysis, and control for large-scale sustainable energy harvesting in river networks, part of RyvERS, a NSF CyberSEES funded project.</p>"
 }

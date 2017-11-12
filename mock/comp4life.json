@@ -1,5 +1,5 @@
 {
 	"title": "Computing for Life Science Applications",
-	"picture": "img/news/img01.jpg",
+	"picture": "img/news/img01.png",
 	"content": "<p>As a sister concern to Big Data, the Big Mechanism challenge tries to identify interactions within and across complicated system. Biological, economic, and social systems have many parts and processes, but they are studied piecewise, and information about the data and their interactions are fragmented, distributed and inconsistent. Our research targets hardware acceleration of algorithms required for efficient Big Mechanism analysis and emulation in reconfigurable hardware of cancer signaling networks. Our results show that up to five orders of magnitude speedup can be achieved by using FPGA-based hardware emulation of large signaling networks, with implications in speeding up model assembly and explanation for biologists and the medial field. Our work is part of CMU-based AIMCancer team, a DARPA Big Mechanism funded project.</p>"
 }

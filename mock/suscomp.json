@@ -1,5 +1,5 @@
 {
 	"title": "Sustainable Computing",
-	"picture": "img/news/img01.jpg",
+	"picture": "img/news/img01.png",
 	"content": "<p>Our work relies on statistical learning approaches for managing power in large scale computing systems and implementing computational kernels for on-chip learning in an energy efficient manner. Our recent work shows that the use of on-line learning (in the form of either semi-supervised or distributed reinforcement learning) can achieve iso-performance at 10-15% lower energy. Furthermore, our work has shown that on-line learning-based models for power and performance are instrumental in performance improvement/power management via extended range operation (including near-threshold operation) or application mapping and scheduling for many-core systems, thereby improving performance by up to 30% at iso-power. This project is part of the NSF-funded Statistical Learning in Chip (SLIC) effort. tempor incididunt ut labore.</p>"
 }
