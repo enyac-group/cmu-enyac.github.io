@@ -280,7 +280,7 @@ html, body {
 	-moz-transform: translateY(-60%);
 	-o-transform: translateY(-60%);
 	-ms-transform: translateY(-60%);
-	z-index: 1;
+	/* z-index: 1; */
 	text-align: center;
 }
 
@@ -378,7 +378,7 @@ section.bg-reverse {
 }
 
 section.bg-overlay {
-	background-color: rgba(0,0,0,0.85);
+	background-color: rgba(0,0,0,85);
 }
 
 section.padding {
@@ -774,6 +774,7 @@ footer i {
 		right: 20px;
 	}
 	.navbar.main-navbar .navbar-collapse {
+		opacity: 1
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
