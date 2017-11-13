@@ -31,8 +31,8 @@ html, body {
 }
 
 .navbar-toggler {
-	border-color: #fff;
-	color: #fff;
+	border-color: #000;
+	color: #000;
 }
 
 .navbar-toggler i {
@@ -57,6 +57,26 @@ html, body {
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+.container .section-body .pub .btn-primary{
+	margin-left: 20px;
+	margin-bottom: 20px;
+	padding: 15px 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	font-size: 10px;
+	cursor: pointer;
+	border-color: #990000;
+	color: #fff;
+	background-color: #990000;
+	border-width: 2px;
 }
 
 /*article read*/
@@ -160,7 +180,7 @@ html, body {
 }
 
 .navbar.main-navbar .navbar-brand {
-	width: 110px;
+	width: 180px;
 	padding: 0;
 	line-height: 0;
 }
@@ -268,7 +288,7 @@ html, body {
 	margin: 0;
 	font-size: 64px;
 	font-weight: 300;
-	letter-spacing: .5px;
+	letter-spacing: 2px;
 	line-height: 1.3em;
 }
 
@@ -276,12 +296,28 @@ html, body {
 	font-weight: 600;
 }
 
+.hero .text b.cap {
+	color: #4cc215;
+}
+
+.hero .text b.high {
+	color: #d7df72;
+}
+
 .hero .text p.lead {
 	margin-bottom: 20px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	letter-spacing: 1.5px;
 	line-height: 0;
-	font-size: 16px;
+	font-size: 30px;
+}
+
+.hero .text p.desc {
+	margin-top: 70px;
+	margin-bottom: 20px;
+	/* text-transform: uppercase; */
+	letter-spacing: .5px;
+	font-size: 20px;
 }
 
 .hero .cta {
@@ -354,6 +390,7 @@ section#blog {
 }
 
 section .section-title {
+	margin-top: 20px;
 	font-size: 34px;
 }
 
@@ -366,6 +403,12 @@ section .section-lead {
 section .section-body {
 	margin-top: 60px;
 }
+
+section .section-body .funding {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 
 section.callout {
 	padding: 50px 0;
