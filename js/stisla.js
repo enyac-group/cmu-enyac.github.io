@@ -48,6 +48,84 @@ $(function() {
 		});
 	});
 
+	$(".allbtn").click(function(){
+		$("#bookdiv").show();
+		$("#journaldiv").show();
+		$("#confdiv").show();
+	});
+	$(".bookbtn").click(function(){
+		$("#bookdiv").show();
+		$("#journaldiv").hide();
+		$("#confdiv").hide();
+	});
+	$(".journalbtn").click(function(){
+		$("#bookdiv").hide();
+		$("#journaldiv").show();
+		$("#confdiv").hide();
+	});
+	$(".confbtn").click(function(){
+		$("#bookdiv").hide();
+		$("#journaldiv").hide();
+		$("#confdiv").show();
+	});
+
+	$("[data-toggle=read-pub]").click(function() {
+		let $this = $(this),
+				$id = $this.attr("data-id");
+
+		$("body").css({
+			overflow: "hidden"
+		});
+
+		let $element = '<div class="article-read">';
+				$element += '<div class="article-read-inner">';
+				$element += '<div class="article-back">';
+				$element += '<a class="btn btn-outline-primary"><i class="ion ion-chevron-left"></i> Back</a>';
+				$element += '</div>';
+				$element += '<h1 class="article-title">{title}</h1>';
+				$element += '<div class="article-content">';
+				$element += '{content}';
+				$element += '</div>';
+				$element += '<div class="article-back" style="margin-top: 40px">';
+				$element += '<a class="btn btn-outline-primary"><i class="ion ion-chevron-left"></i> Back</a>';
+				$element += '</div>';
+				$element += '</div>';
+				$element += '</div>';
+
+		$.ajax({
+			url: "mock/"+$id+".json",
+			dataType: 'json',
+			beforeSend: function() {
+				loading.show();
+			},
+			complete: function() {
+				loading.hide();
+			},
+			success: function(data) {
+				let reg = /{([a-zA-Z0-9]+)}/g,
+						res = [],
+						element = $element;
+				while(match = reg.exec($element)) {
+					element = element.replace('{' + match[1] + '}', data[match[1]]);
+				}
+
+				$("body").prepend(element);
+				$(".article-read").fadeIn();
+				$(document).on("click", ".article-back .btn", function() {
+					$(".article-read").fadeOut(function() {
+						$(".article-read").remove();
+						$("body").css({
+							overflow: 'auto'
+						});
+					});
+					return false;
+				});
+			}
+		});
+
+		return false;
+	});
+
 	$("[data-toggle=read]").click(function() {
 		let $this = $(this),
 				$id = $this.attr("data-id");

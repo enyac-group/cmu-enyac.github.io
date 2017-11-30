@@ -50,33 +50,13 @@ html, body {
 }
 
 .overlay {
-	background-color: #000;
+	background-color: rgb(255, 255, 255);
 	opacity: .7;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-}
-
-.container .section-body .pub .btn-primary{
-	margin-left: 20px;
-	margin-bottom: 20px;
-	padding: 15px 20px;
-	text-transform: uppercase;
-	font-weight: 600;
-	letter-spacing: 2px;
-	border-radius: 0;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	-ms-border-radius: 0;
-	-o-border-radius: 0;
-	font-size: 10px;
-	cursor: pointer;
-	border-color: #990000;
-	color: #fff;
-	background-color: #990000;
-	border-width: 2px;
 }
 
 /*article read*/
@@ -266,25 +246,42 @@ html, body {
 /*hero*/
 .hero {
 	height: 100%;
-	color: #fff;
+	color: rgb(0, 0, 0);
 	position: relative;
+}
+
+.hero .home {
+	position: absolute;
+	top: 15%;
+	left: 25%;
+	text-align: center;
 }
 
 .hero .text {
 	position: absolute;
-	top: 60%;
-	left: 300px;
-	right: 300px;
-	transform: translateY(-60%);
-	-webkit-transform: translateY(-60%);
-	-moz-transform: translateY(-60%);
-	-o-transform: translateY(-60%);
-	-ms-transform: translateY(-60%);
+	top: 65%;
+	left: 0;
 	/* z-index: 1; */
 	text-align: center;
+	background-color: #ffffff;
+	opacity: .7;
+	width: 100%;
+	height: 100%;
 }
 
 .hero .text h1 {
+	margin-top: 30px;
+	font-size: 36px;
+	margin-bottom: 30px;
+}
+
+.hero .text li {
+	font-weight: bold;
+	letter-spacing: 1px;
+	line-height: 3;
+}
+
+.hero .home h1 {
 	margin: 0;
 	font-size: 64px;
 	font-weight: 300;
@@ -292,19 +289,19 @@ html, body {
 	line-height: 1.3em;
 }
 
-.hero .text h1 .bold {
+.hero .home h1 .bold {
 	font-weight: 600;
 }
 
-.hero .text b.cap {
-	color: #4cc215;
+.hero .home b.cap {
+	font-weight: bold;
 }
 
-.hero .text b.high {
-	color: #d7df72;
+.hero .home b.high {
+	color: #990000;
 }
 
-.hero .text p.lead {
+.hero .home p.lead {
 	margin-bottom: 20px;
 	/* text-transform: uppercase; */
 	letter-spacing: 1.5px;
@@ -312,7 +309,7 @@ html, body {
 	font-size: 30px;
 }
 
-.hero .text p.desc {
+.hero .home p.desc {
 	margin-top: 70px;
 	margin-bottom: 20px;
 	/* text-transform: uppercase; */
@@ -320,48 +317,9 @@ html, body {
 	font-size: 20px;
 }
 
-.hero .cta {
-	margin-top: 40px;
-}
-
-.hero .cta .btn {
-	padding: 15px 20px;
-	text-transform: uppercase;
-	font-size: 12px;
-	letter-spacing: 1.3px;
-	font-weight: 600;
-}
-
-.hero .cta .btn.btn-primary {
-	border-radius: 30px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	-o-border-radius: 30px;
-	-ms-border-radius: 30px;
-	padding-left: 30px;
-	padding-right: 30px;
-}
-
-.hero .cta .btn.btn-link {
-	color: #fff;
-}
-
-.hero .cta .btn.btn-link i {
-	margin-right: 5px;
-}
-
-.hero .cta .link {
-	margin-top: 15px;
-}
-
-.hero .cta .link a {
-	color: #fff;
-	font-size: 12px;
-	text-decoration: underline;
-	text-transform: none;
-	color: #999;
-	font-weight: 600;
-	letter-spacing: .3px;
+.selectbtn {
+	margin-left: 10px;
+	cursor: pointer;
 }
 
 /*section*/
@@ -497,8 +455,12 @@ article.card {
 	margin-bottom: 60px;
 }
 
-article.card .card-img-top {
-	height: 100%;
+.img-circle {
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+	display: block;
+    margin: 0 auto;
 }
 
 article.card .card-title {
@@ -609,7 +571,7 @@ article.card .card-more i {
 }
 
 .projects-details {
-	color: #fff;
+	color: rgb(0, 0, 0);
 }
 
 .projects-details .projects-badge {
@@ -631,34 +593,38 @@ article.card .card-more i {
 .projects-details .projects-description {
 	line-height: 28px;
 	margin-top: 20px;
-	color: #999;
+	color: rgb(24, 2, 2);
 }
 
-.projects-details .projects-cta {
-	margin-top: 40px;
+.projects-cta {
+	margin-top: 30px;
 }
 
-.projects-details .projects-cta .btn-primary {
-	background-color: #fff;
-	border-radius: 0;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	-ms-border-radius: 0;
-	-o-border-radius: 0;
+.projects-cta .btn-primary {
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius: 5;
+	-webkit-border-radius: 5;
+	-moz-border-radius: 5;
+	-ms-border-radius: 5;
+	-o-border-radius: 5;
 	color: #000;
-	border-color: #fff;
+	border-color: rgb(0, 0, 0);
 	padding: 13px 20px;
 	text-transform: uppercase;
 	font-weight: 800;
 }
 
-.projects-details .projects-cta .btn-primary:hover {
+.projects-cta .btn-primary:hover {
 	background-color: transparent;
 	color: #fff;
 }
 
-.projects-details .projects-cta .btn-link {
+.projects-cta .btn-link {
 	color: #999;
+}
+
+.headline {
+	font-family: "Times New Roman"
 }
 
 /*contact*/
