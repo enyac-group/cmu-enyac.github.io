@@ -7,7 +7,7 @@ $(function() {
 			$(".main-loading").remove();
 		}
 	}
-	$("body").easeScroll();
+	// $("body").easeScroll();
 
 	// news
 	$(".card").slice(0, 4).show();
