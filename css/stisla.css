@@ -160,7 +160,7 @@ html, body {
 }
 
 .navbar.main-navbar .navbar-brand {
-	width: 120px;
+	width: 100px;
 	padding: 0;
 	line-height: 0;
 }
@@ -245,9 +245,7 @@ html, body {
 
 /*hero*/
 .hero {
-	height: 100%;
 	color: rgb(0, 0, 0);
-	position: relative;
 }
 
 .hero .home {
@@ -260,7 +258,8 @@ html, body {
 
 .hero .text {
 	/* position: absolute; */
-	margin-top: 100px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 	/* z-index: 1; */
 	text-align: center;
 	background-color: #ffffff;
@@ -301,20 +300,20 @@ html, body {
 	color: #990000;
 }
 
-.hero .home p.lead {
+.hero .home h2.lead {
 	margin-bottom: 20px;
 	/* text-transform: uppercase; */
-	letter-spacing: 1.5px;
-	line-height: 0;
+	/* letter-spacing: 1.5px; */
+	/* line-height: 0; */
 	font-size: 30px;
 }
 
 .hero .home p.desc {
-	margin-top: 70px;
+	/* margin-top: 70px; */
 	margin-bottom: 20px;
 	/* text-transform: uppercase; */
-	letter-spacing: .5px;
-	font-size: 20px;
+	/* letter-spacing: .5px; */
+	/* font-size: 20px; */
 }
 
 .selectbtn {
@@ -624,7 +623,7 @@ article.card .card-more i {
 }
 
 .headline {
-	font-family: "Times New Roman"
+	margin-top: 50px;
 }
 
 /*contact*/
