@@ -443,6 +443,11 @@ section.callout h3 {
 	margin-top: 10px;
 }
 
+/* news */
+.card {
+	display: none;
+}
+
 /*article*/
 article.card {
 	border: none;
@@ -609,13 +614,14 @@ article.card .card-more i {
 	color: #000;
 	border-color: rgb(0, 0, 0);
 	padding: 13px 20px;
+	font-size: 12px;
 	text-transform: uppercase;
-	font-weight: 800;
+	font-weight: bold;
 }
 
 .projects-cta .btn-primary:hover {
 	background-color: transparent;
-	color: #fff;
+	color: #990000;
 }
 
 .projects-cta .btn-link {

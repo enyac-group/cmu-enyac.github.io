@@ -9,6 +9,26 @@ $(function() {
 	}
 	$("body").easeScroll();
 
+	// news
+	$(".card").slice(0, 4).show();
+	$("#news-showmore").text("Show More")
+	$("#news-showmore").val(0)
+
+	$("#news-showmore").on('click', function (e) {
+		e.preventDefault();
+		if ($("#news-showmore").val() == 0) {
+			$(".card:hidden").slideDown();
+			$("#news-showmore").text("Show Less")
+			$("#news-showmore").val(1)
+		}
+		else {
+			$(".card").slice(4).hide();
+			$("#back-to-news").click()
+			$("#news-showmore").text("Show More")
+			$("#news-showmore").val(0)
+		}
+    });
+
 	$("[data-bg]").each(function() {
 		let $this = $(this),
 				$bg = $this.attr("data-bg");
