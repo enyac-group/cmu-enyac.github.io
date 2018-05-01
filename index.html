@@ -18,8 +18,7 @@
 	<nav class="navbar navbar-expand-lg main-navbar">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#">
-				<img src="img/logo-cmu.png" alt="CMU Logo">
-				<img src="img/ecelogo1.gif" alt="ECE Logo">
+				<img src="img/logo-cmu-ece.jpg" alt="CMU Logo">
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
 			 aria-label="Toggle navigation">
@@ -37,10 +36,10 @@
 						<a class="nav-link smooth-link" href="#about">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link smooth-link" href="#research">Research</a>
+						<a class="nav-link smooth-link" href="#member">Team</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link smooth-link" href="#member">Team</a>
+						<a class="nav-link smooth-link" href="#research">Research</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link smooth-link" id="back-to-news" href="#news">News</a>
@@ -57,8 +56,10 @@
 				</ul>
 			</div>
 		</div>
-	</nav>
-	<section class="hero bg-overlay" id="home" data-bg="img/tartan.png">
+    </nav>
+
+    <section class="hero bg-overlay" id="home" data-bg="img/tartan.png">
+
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="home col-12 col-8">
@@ -76,20 +77,54 @@
 				</div>
 			</div>
 			<div class="row align-items-center">
-				<div class="text">
-					<h1>News</h1>
-					<ul style="margin-bottom: 40px">
-						<li>
-							Dimitrios Stamoulis's paper got accepted to DATE 2018!
-						</li>
-						<li>
-							Ermao Cai's paper got accepted to ACML 2017!
-						</li>
-					</ul>
-					<!-- <div class="projects-cta">
-						<a href="#news" class="btn btn-primary smooth-link">Learn More</a>
-					</div> -->
-				</div>
+
+                <div class="news">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="#" data-toggle="read" data-id="news-lazarus">
+                                    <img src="./img/diana-lazarus1.png" alt="Third slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h3>Prof. Marculescu receives the Lazarus Award</h3>
+                                        <p>Marculescu is the recipient of the Barbara Lazarus Award, which recognizes exemplary contributions to fostering a welcoming and nurturing environment for graduate students and young faculty at Carnegie Mellon.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#" data-toggle="read" data-id="news-hyperpower">
+                                    <img src="./img/hh-1.jpg" alt="First slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h3>Paper got accepted to DATE 2018</h3>
+                                        <p>Dimitrios Stamoulis's paper got accepted to DATE 2018!</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#" data-toggle="read" data-id="news-neuralpower">
+                                    <img src="./img/hh-2.jpg" alt="Second slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h3>Paper got accepted to ACML 2017</h3>
+                                        <p>Ermao Cai's paper got accepted to ACML 2017!</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                </div>
 			</div>
 		</div>
 	</section>
@@ -119,67 +154,6 @@
 								Check Research Projects
 							</a>
 						</div> -->
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="padding" id="research">
-		<h1 class="text-center headline">Research Projects</h1>
-		<div class="container" style="margin-top: 60px">
-			<div class="row">
-				<div class="col-12 col-md-4 col-sm-12">
-					<div class="list-item">
-						<div class="icon">
-							<i class="ion-ios-lightbulb"></i>
-						</div>
-						<div class="desc">
-							<h2>Sustainable Computing</h2>
-							<p>
-								Our work relies on statistical learning approaches for managing power in large scale computing systems and implementing computational
-								kernels for on-chip learning in an energy efficient manner.
-							</p>
-							<div class="projects-cta">
-								<a href="#" class="btn btn-primary" data-toggle="read" data-id="suscomp">Learn More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 col-sm-12">
-					<div class="list-item">
-						<div class="icon">
-							<i class="ion-ios-partlysunny-outline"></i>
-						</div>
-						<div class="desc">
-							<h2>Computing for Sustainability</h2>
-							<p>
-								Water, solar and wind are essential for a sustainable transformation of our energy systems. Distributed solar and wind farms
-								proliferate, but energy harvesting from water is trapped in a century-old damming paradigm with high up-front costs
-								and ecological impacts.
-							</p>
-							<div class="projects-cta">
-								<a href="#" class="btn btn-primary" data-toggle="read" data-id="comp4sus">Learn More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 col-sm-12">
-					<div class="list-item no-spacing">
-						<div class="icon">
-							<i class="ion-heart"></i>
-						</div>
-						<div class="desc">
-							<h2>Computing for Life Science Applications</h2>
-							<p>
-								As a sister concern to Big Data, the Big Mechanism challenge tries to identify interactions within and across complicated
-								system. Biological, economic, and social systems have many parts and processes, but they are studied piecewise, and
-								information about the data and their interactions are fragmented, distributed and inconsistent.
-							</p>
-							<div class="projects-cta">
-								<a href="#" class="btn btn-primary" data-toggle="read" data-id="comp4life">Learn More</a>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -263,6 +237,66 @@
 
 	</section>
 
+	<section class="padding" id="research">
+		<h1 class="text-center headline">Research Projects</h1>
+		<div class="container" style="margin-top: 60px">
+			<div class="row">
+				<div class="col-12 col-md-4 col-sm-12">
+					<div class="list-item">
+						<div class="icon">
+							<i class="ion-ios-lightbulb"></i>
+						</div>
+						<div class="desc">
+							<h2>Sustainable Computing</h2>
+							<p>
+								Our work relies on statistical learning approaches for managing power in large scale computing systems and implementing computational
+								kernels for on-chip learning in an energy efficient manner.
+							</p>
+							<div class="projects-cta">
+								<a href="#" class="btn btn-primary" data-toggle="read" data-id="suscomp">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 col-sm-12">
+					<div class="list-item">
+						<div class="icon">
+							<i class="ion-ios-partlysunny-outline"></i>
+						</div>
+						<div class="desc">
+							<h2>Computing for Sustainability</h2>
+							<p>
+								Water, solar and wind are essential for a sustainable transformation of our energy systems. Distributed solar and wind farms
+								proliferate, but energy harvesting from water is trapped in a century-old damming paradigm with high up-front costs
+								and ecological impacts.
+							</p>
+							<div class="projects-cta">
+								<a href="#" class="btn btn-primary" data-toggle="read" data-id="comp4sus">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 col-sm-12">
+					<div class="list-item no-spacing">
+						<div class="icon">
+							<i class="ion-heart"></i>
+						</div>
+						<div class="desc">
+							<h2>Computing for Life Science Applications</h2>
+							<p>
+								As a sister concern to Big Data, the Big Mechanism challenge tries to identify interactions within and across complicated
+								system. Biological, economic, and social systems have many parts and processes, but they are studied piecewise, and
+								information about the data and their interactions are fragmented, distributed and inconsistent.
+							</p>
+							<div class="projects-cta">
+								<a href="#" class="btn btn-primary" data-toggle="read" data-id="comp4life">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<section id="news">
 		<div class="container">
@@ -616,273 +650,44 @@
 			<h1 class="headline text-center">Alumni</h1>
 			<div class="section-body">
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-4">
 						<h4>Ph.D. Graduates</h4>
-						<ul>
-							<li>
-								<a href="https://research.google.com/pubs/DaChengJuan.html" target="_blank">Da-Cheng Juan</a> (Ph.D. 2014) [Data scientist, Google, Mountain View, CA]
-							</li>
-							<li>
-								<a href="http://people.cs.nctu.edu.tw/~kcw/" target="_blank">Kai-Chiang (Alex) Wu</a> (Ph.D. 2011) [Assistant Professor at National Chiao Tong University, Taiwan]
-							</li>
-							<li>
-								<a href="http://engineering.nyu.edu/people/siddharth-garg" target="_blank">Siddharth Garg</a> (Ph.D. 2009) [Assistant Professor at New York University]
-							</li>
-							<li>
-								Sebastian Herbert (Ph.D. 2009) [DC Energy, Washington DC]
-							</li>
-							<li>
-								<a href="http://www.cs.cmu.edu/~nmiskov/Natasas_website/Home.html" target="_blank">Natasa Miskov-Zivanov</a> (Ph.D. 2008) [Research Scientist in SCS and ECE at Carnegie Mellon University]
-							</li>
-							<li>
-								Phillip Stanley-Marbell (Ph.D. 2007) [Research Scientist in CSAIL at Massachusetts Institute of Technology]
-							</li>
-							<li>
-								Emil Talpes (Ph.D. 2005) [Tesla, San Jose CA]
-							</li>
-						</ul>
+                        <div class="projects-cta" style="margin-bottom: 60px">
+                            <a href="#" class="btn btn-primary" data-toggle="read-pub" data-id="alumni-phd">More</a>
+                        </div>
 					</div>
+                    <div class="col-md-4">
+                        <h4>Post-Doctoral Visiting Scholars</h4>
+                        <div class="projects-cta" style="margin-bottom: 60px">
+                            <a href="#" class="btn btn-primary" data-toggle="read-pub" data-id="alumni-postdoc">More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Ph.D. Visiting Scholars</h4>
+                        <div class="projects-cta" style="margin-bottom: 60px">
+                            <a href="#" class="btn btn-primary" data-toggle="read-pub" data-id="alumni-visit">More</a>
+                        </div>
+                    </div>
 				</div>
 				<div class="row">
-					<div class="col-md-6">
-						<h4>Post-Doctoral Visiting Scholars</h4>
-						<ul>
-							<li>
-								Ivan Ukhov [Linkoping University, Sweden]
-							</li>
-							<li>
-								Eun-Gu Jung [ETRI, Korea]
-							</li>
-						</ul>
-					</div>
-					<div class="col-md-6">
-						<h4>Ph.D. Visiting Scholars</h4>
-						<ul>
-							<li>
-								Jiajia Jiao, Shanghai Jiao Tong University, Shanghai, China [Maritime University, Shanghai, China]
-							</li>
-							<li>
-								Ming-Chao Lee, National Tsing-Hua University, Taiwan [MediaTEK, Taiwan]
-							</li>
-							<li>
-								Yi-Lin Chuang, National Taiwan University, Taiwan [TSMC, Taiwan]
-							</li>
-							<li>
-								Wan-Ping Lee, National Taiwan University, Taiwan [Senior Lead Research Scientist, Seven Bridges Genomics, Boston, MA]
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-4">
 						<h4>M.S. Students (with a thesis)</h4>
-						<ul>
-							<li>
-								Guangshuo Liu (M.S. 2014) [Google/Nest Labs, Mountain View, CA]
-							</li>
-							<li>
-								Puru Choudhary (M.S. 2007) [Outright and Webieu, Mountain View, CA]
-							</li>
-							<li>
-								Koushik Niyogi (M.S. 2005) [Synopsys, Mountain View, CA]
-							</li>
-							<li>
-								Venkata Syam Rapaka (M.S. 2003) [Walmart Labs, Sunnyvale, CA]
-							</li>
-							<li>
-								Katrina Zwicker (M.S. 2003) [Lockheed Martin]
-							</li>
-							<li>
-								Anoop Iyer (M.S. 2002) [Samsung, Austin, TX]
-							</li>
-						</ul>
+                        <div class="projects-cta" style="margin-bottom: 60px">
+                            <a href="#" class="btn btn-primary" data-toggle="read-pub" data-id="alumni-mst">More</a>
+                        </div>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-4">
 						<h4>M.S. Students (research projects)</h4>
-						<ul>
-							<li>
-								Harsha Ambardekar (F'14-F'15) [Intel Corp.]
-							</li>
-							<li>
-								Sumanth Suresh (F'14-F'15) [Nutanix]
-							</li>
-							<li>
-								Sudhir Vijay (F'14-F'15) [Datrium]
-							</li>
-							<li>
-								Aditya Kotwal (F'13-F'14) [VMWare]
-							</li>
-							<li>
-								Suvrat Alshi (F'13-S'14) [SanDisk]
-							</li>
-							<li>
-								Shraddha Joshi (F'13-S'14) [Oracle Corp.]
-							</li>
-							<li>
-								Willis Chang (S'13-F'13) [Sterne, Kessler, Goldstein, and Fox]
-							</li>
-							<li>
-								Samantha Tan (F'12-S'13) [Apple Corp.]
-							</li>
-							<li>
-								Akshita Jain (S'13) [SanDisk]
-							</li>
-							<li>
-								Samyuktha Subramanian (S'13) [VMWare]
-							</li>
-							<li>
-								Ameya Ambardekar (Su'12-F'12) [Intel Corp.]
-							</li>
-							<li>
-								Ratin Malkud (Su'12-F'12) [Cisco Systems]
-							</li>
-							<li>
-								Aakash Chugh (S'12) [Cadence Design Systems]
-							</li>
-							<li>
-								Arnold Pereira (S'12) [Microsoft]
-							</li>
-							<li>
-								Xianglong Fu (F'11) [Oracle Corp.]
-							</li>
-							<li>
-								Pinjie Huang (F'11) [Oracle Corp.]
-							</li>
-							<li>
-								Sundeep Konudula (S'11) [Mobile Rush]
-							</li>
-							<li>
-								Kedar Mane (S'11) [NVIDIA]
-							</li>
-							<li>
-								Jagannathan Raman (S'11) [NVIDIA]
-							</li>
-							<li>
-								Prashant Kashinkunti (F'10) [Microsoft]
-							</li>
-							<li>
-								Deepa Krishnaswamy (F'10) [University of Pittsburgh]
-							</li>
-							<li>
-								Sreesan Venkatakrishnan (F'10) [Oracle Corp.]
-							</li>
-							<li>
-								Prashanth Balasubramanian (F'10)
-							</li>
-							<li>
-								Yu Chi Cheng (F'08-S'09)
-							</li>
-							<li>
-								Gaurav Kapoor (F'06-S'07) [Apple]
-							</li>
-							<li>
-								Seng Teck Sing (F'02-S'03) [DSO National Labs, Singapore]
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6">
+                        <div class="projects-cta" style="margin-bottom: 60px">
+                            <a href="#" class="btn btn-primary" data-toggle="read-pub" data-id="alumni-msr">More</a>
+                        </div>
+                    </div>
+					<div class="col-md-4">
 						<h4>Undergraduates</h4>
-						<ul>
-							<li>
-								Lizzie Paquette (Su'16, Summer Intern, Wesleyan University) [Columbia University]
-							</li>
-							<li>
-								Yatish Turakhia (Su'12, Su'13, Summer Intern, IIT Bombay) [Ph.D. Student, Stanford University]
-							</li>
-							<li>
-								Niharika Singh (S'12-S'14, SRC URO Fellow) [Harvard Law School, Cambridge, MA]
-							</li>
-							<li>
-								Pranay Ranjan (Su'12, Summer Intern, IIT Bombay) [Blackstone Group, India]
-							</li>
-							<li>
-								Vikram Rajkumar (S'12) [Space Exploration Technologies]
-							</li>
-							<li>
-								Solomon H. Sia (S'12) [Graduate student, Stanford University]
-							</li>
-							<li>
-								Neereja Sundaresan (F'10-S'11) [Ph.D. Student, Princeton University]
-							</li>
-							<li>
-								Archa Jain (F'10-S'11) [Uber Technologies]
-							</li>
-							<li>
-								Andrew Bresticker (Su'10) [Google]
-							</li>
-							<li>
-								Sean Coleman (Su'09)
-							</li>
-							<li>
-								Sunny Atluri (F'06-S'08, IFYRE Fellow) [Oracle Corp.]
-							</li>
-							<li>
-								Brian Loo (S'05-F'05) [Citadel Investment Group]
-							</li>
-							<li>
-								Chern Yih Cheah (S'05-F'05) [Nutanix]
-							</li>
-							<li>
-								Neha Padhi (S'05-S'06)
-							</li>
-							<li>
-								Mario Escalante (F'05-S'06)
-							</li>
-							<li>
-								Stephanie Rosenthal (F'05-S'06)
-							</li>
-							<li>
-								Han Chun Lim (Su'04) [Kinetic Global Markets]
-							</li>
-							<li>
-								Stanley Sun (F'04-S'05) [Nomura Securities]
-							</li>
-							<li>
-								Colin Hobday (F'04-S'05) [Aksaas, Singapore]
-							</li>
-							<li>
-								Gregory Tan (S'04-F'04)
-							</li>
-							<li>
-								Yanjing Li (F'04) [Intel Corp.]
-							</li>
-							<li>
-								Yong Khong Chong (F'04)
-							</li>
-							<li>
-								Shaun Lee (S'04)
-							</li>
-							<li>
-								Zaizhi Cheng (S'04)
-							</li>
-							<li>
-								Adam Stoler (F'03) [Akamai Technologies]
-							</li>
-							<li>
-								Matt Pardini (F'03) [IBM]
-							</li>
-							<li>
-								Justiin Ang (S'03)
-							</li>
-							<li>
-								Kay Chun Lim (F'03)
-							</li>
-							<li>
-								Junichi Furukawa (F'03)
-							</li>
-							<li>
-								Kah Kien Ong (F'03)
-							</li>
-							<li>
-								Charlene Chu (S'03) [Ford]
-							</li>
-							<li>
-								Shing Tai Leung (S'02-F'02) [Singapore Armed Forces]
-							</li>
-						</ul>
-					</div>
+                        <div class="projects-cta" style="margin-bottom: 60px">
+                            <a href="#" class="btn btn-primary" data-toggle="read-pub" data-id="alumni-undergrad">More</a>
+                        </div>
+                    </div>
 				</div>
 			</div>
 		</div>
