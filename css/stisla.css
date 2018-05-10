@@ -648,6 +648,16 @@ article.card .card-more i {
 	font-weight: bold;
 }
 
+a {
+    color: black;
+    text-decoration: none
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline #990000; 
+}
+
 .projects-cta .btn-primary:hover {
 	background-color: transparent;
 	color: #990000;
