@@ -1,0 +1,5 @@
+{
+	"title": "EnyAC-ers are presenting two works at NIPS'18 Workshops",
+    "picture": "./img/nips.jpg",
+	"content": "Rudy's work on network pruning is accepted as oral contribution to <a href=\"https://sites.google.com/view/nips-2018-on-device-ml/home?authuser=0\">NIPS workshop on MLPCD 2</a> while Ruizhou and Rudy's work on hardware-efficient quantization is accepted <a href=\"https://nips.cc/Conferences/2018/Schedule?showEvent=10941\">NIPS workshop on CDNNRIA</a>"
+}
