@@ -282,12 +282,15 @@ html, body {
     background: rgba(0, 0, 0, 0);
   }
   
-.carousel-caption h3,
-.carousel-caption p {
-color: #ffffff;
+.carousel-caption h3 {
 color: #990000;
 }
 
+
+.carousel-caption p {
+color: #000000;
+font-weight: bold; 
+}
 
 .hero .text {
 	/* position: absolute; */
