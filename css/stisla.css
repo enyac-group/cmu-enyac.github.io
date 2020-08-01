@@ -51,7 +51,7 @@ html, body {
 
 .overlay {
 	background-color: rgb(255, 255, 255);
-	opacity: .7;
+	opacity: .85;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -371,7 +371,7 @@ section.bg-reverse {
 }
 
 section.bg-overlay {
-	background-color: rgba(0,0,0,85);
+	background-color: rgba(0,0,0,0.9);
 }
 
 section.padding {
