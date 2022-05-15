@@ -266,8 +266,8 @@ html, body {
 
 .hero .news .carousel-item > a > img {
     /* width: 100%; */
-    height: 400px;
-    padding-top: 160px;
+    height: 600px;
+    padding-top: 100px;
 }
 
 .carousel-caption {
