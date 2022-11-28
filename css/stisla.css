@@ -279,7 +279,9 @@ html, body {
     top: 0;
     left: 0; */
     top: 0;
-    height: 150px;
+    /*height: 150px;*/
+	/*height: auto;*/
+	height: 100%;
     padding: 10px 15px 35px;
     /* background: #333333; */
     background: rgba(0, 0, 0, 0);
