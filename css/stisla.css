@@ -3,6 +3,8 @@ html, body {
 	height: 100% !important;
 }
 
+
+
 .main-loading {
 	position: fixed;
 	top: 50%;
@@ -290,6 +292,11 @@ html, body {
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
+	iframe{
+	  	width: 100%;
+	  	height: calc((100vw*9) /16);
+	}
+
 	.hero .news .carousel-item > a > img {
 		/*width: 100%;*/
 		max-width:100%;
